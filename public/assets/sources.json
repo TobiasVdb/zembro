@@ -1,0 +1,35 @@
+{
+  "source": "Supplied Zembro artwork",
+  "images": [
+    {
+      "source": "ladywalking.png",
+      "output": "hero.webp"
+    },
+    {
+      "source": "EV12 Mini²_With charging base 3.png",
+      "output": "mini.webp"
+    },
+    {
+      "source": "silvershield.png",
+      "output": "sensor.webp"
+    },
+    {
+      "source": "hand_holding_phone.png",
+      "output": "phone.webp"
+    },
+    {
+      "source": "OKTAVE~3 2.png",
+      "output": "watch.webp"
+    },
+    {
+      "source": "ladywalking.png (left room crop)",
+      "output": "interior.webp"
+    },
+    {
+      "source": "Final.png (portrait crop without text)",
+      "output": "impact.webp"
+    }
+  ],
+  "logo": "zembrologo.png",
+  "video": "Zembro_Independent_Not_Alone_40s_v3.mp4"
+}

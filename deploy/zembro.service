@@ -1,0 +1,22 @@
+[Unit]
+Description=Zembro landing and CMS
+After=network.target
+
+[Service]
+Type=simple
+User=zembro
+Group=zembro
+WorkingDirectory=/opt/zembro/current
+EnvironmentFile=/etc/zembro/zembro.env
+ExecStart=/usr/bin/node server/dist/server/index.js
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/zembro
+UMask=0077
+
+[Install]
+WantedBy=multi-user.target

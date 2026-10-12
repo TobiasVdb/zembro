@@ -1,0 +1,17 @@
+{
+  "verified": "2026-10-12",
+  "sources": [
+    {
+      "productUrl": "https://zembro.com/products/comfort",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0511/0621/8146/files/Zembro-comfort_c63a3b1b-f7c7-4bfa-9097-b29eb6a1b988.png?v=1713810177",
+      "output": "comfort.webp",
+      "originalSha256": "b010a79da4da499938e8ce7b76b3fadd2ad49d49b371dfd578bc60fa660f576f"
+    },
+    {
+      "productUrl": "https://zembro.com/products/wander-alert",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0511/0621/8146/files/WanderAlert-noaward_d1a99bc7-831a-410c-8401-afeba1e98606.png?v=1714339681",
+      "output": "wander-alert.webp",
+      "originalSha256": "33044d7ecae03fd270f69378dd1de43e308e2328ef8bc73a7b3ab11697720115"
+    }
+  ]
+}

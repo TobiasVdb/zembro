@@ -1,0 +1,45 @@
+{
+  "name": "zembro-landing",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -n web,api \"vite --host 127.0.0.1\" \"tsx watch server/index.ts\"",
+    "build": "tsc --noEmit && vite build && tsc -p server/tsconfig.json",
+    "typecheck": "tsc --noEmit",
+    "start": "node server/dist/server/index.js",
+    "test": "tsx --test server/app.test.ts",
+    "lint": "oxlint src server shared scripts",
+    "assets": "node scripts/prepare-assets.mjs",
+    "assets:products": "node scripts/prepare-product-assets.mjs",
+    "db:seed": "tsx server/seed-cli.ts"
+  },
+  "dependencies": {
+    "@phosphor-icons/react": "^2.1.10",
+    "better-sqlite3": "^13.0.3",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^18.0.7",
+    "express": "^5.3.0",
+    "motion": "^14.1.0",
+    "multer": "^2.4.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^9.6.0",
+    "@types/cookie-parser": "^1.4.10",
+    "@types/express": "^5.0.6",
+    "@types/multer": "^2.3.0",
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "concurrently": "^10.0.6",
+    "oxlint": "^1.87.0",
+    "prettier": "^3.9.10",
+    "sharp": "^0.35.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.4"
+  }
+}

@@ -1,0 +1,11 @@
+﻿node_modules/
+dist/
+server/dist/
+data/
+.env
+*.tsbuildinfo
+verification/
+*.blend[0-9]*
+*.blend@
+__pycache__/
+*.pyc

@@ -1,0 +1,8 @@
+{
+  "source": "silvershield.png (supplied artwork)",
+  "edit": "Built-in image generation edit: repair cropped right/bottom casing edges, preserve visible product, transparent background.",
+  "prompt": "Edit this supplied product cutout for a website. Preserve the exact white cylindrical Silver Shield sensor, its circular front, proportions, visible side button and port and existing printed markings. Repair ONLY the missing edges: source is abruptly cut on right and bottom; extend canvas and complete its smooth existing cylindrical white casing silhouette, no invented buttons, features or labels. Show the entire same product at same angle with generous transparent margin on all sides. Clean the jagged outer alpha edges. True transparent background, no rectangle, no floor, no ring or signals, no added graphic elements. Photorealistic product cutout, keep all existing visible design and lighting. Save usable local file.",
+  "original": "sensor.webp",
+  "edited": "sensor-repaired.png",
+  "optimized": "sensor-clean.webp"
+}
