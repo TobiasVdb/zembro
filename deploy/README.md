@@ -4,7 +4,7 @@ This project runs as one Node process behind Nginx. Deploy separately from Canva
 
 ## Provisioning
 
-Use Ubuntu 24.04 LTS, a supported Node 22 LTS runtime (22.12 or later), npm, Nginx, SQLite CLI, Certbot and its Nginx plugin. A 2 GB RAM droplet is a reasonable starting point. Allow SSH, HTTP and HTTPS in the firewall. Create a dedicated `zembro` service user, `/opt/zembro` for releases, `/var/lib/zembro/data` for SQLite, `/var/lib/zembro/backups` for backups, and `/etc/zembro` for environment configuration. Give the service user ownership of `/var/lib/zembro` and read access to the code.
+Use Ubuntu 24.04 LTS, a supported Node 22 LTS runtime (22.23.4 or later in the 22.x release line), npm, Nginx, SQLite CLI, Certbot and its Nginx plugin. A 2 GB RAM droplet is a reasonable starting point. Allow SSH, HTTP and HTTPS in the firewall. Create a dedicated `zembro` service user, `/opt/zembro` for releases, `/var/lib/zembro/data` for SQLite, `/var/lib/zembro/backups` for backups, and `/etc/zembro` for environment configuration. Give the service user ownership of `/var/lib/zembro` and read access to the code.
 
 ## Build and configure
 
