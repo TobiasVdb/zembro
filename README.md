@@ -15,14 +15,6 @@ The public page works without an editor password. CMS login is disabled until on
 
 `npm run assets` rebuilds optimized artwork from `\\TOWER\Work\Zembro`; set `ARTWORK_DIR` to override the source directory. The ready-to-use web copies in `public/assets` are included. `sources.json` records their provenance. Original files are never modified. `npm run db:seed` initializes only a fresh database. Repeating it preserves edited content and translations.
 
-## News and stories
-
-`/news` lists published articles; `/news/:slug` displays an article and its image gallery or MP4 video. The homepage shows the three latest stories. Navigation, dates, controls and seeded articles support Dutch, English, French and German. Missing translations inherit Dutch; explicitly empty fields remain empty.
-
-Sign in at `/admin`, then choose **News** in the toolbar. Create an article or select an existing one, edit the URL slug/date, switch translation tabs, select/upload media and save. The first image becomes the cover. **Published** controls public visibility; uncheck it and save to return an article to draft. Saves are atomic, errors retain input, and closing with unsaved changes prompts before discarding. Referenced article media cannot be deleted from the library. Article body accepts plain paragraphs and `##` headings; raw HTML is displayed as text.
-
-Five initial articles are editorial adaptations of Zembro-owned LinkedIn posts, imported on 12 October 2026, including original images and the SafeTrx Active announcement video. `public/assets/news/sources.json` records original text, canonical post links and dates derived from the LinkedIn activity timestamps. These are a one-time import, not an automatic LinkedIn sync. The idempotent `seed-v17-news` migration stores articles and media in SQLite and never overwrites subsequent edits. Future stories are managed in the CMS. Other authors' reposts were excluded.
-
 ## Audience pages
 
 `/for-loved-ones` explains checking in on a parent, emergency contacts and everyday follow-up. `/for-care-providers` explains client/device/location management, immediate alert response and proactive review of activity reports. Both are informational pages, use the shared navigation, flowing section edges, light/dark tokens and Motion reveals, and preserve language/query parameters. The header and footer include both audience links; smaller laptops use the existing menu interaction to accommodate longer translations.
@@ -79,10 +71,4 @@ Copy is adapted from the supplied Zembro artwork and these checked pages (12 Oct
 
 No prices, invented testimonials, or numeric effectiveness claims are included. The supplied app imagery is presented as product imagery, not a live status display. Translations are initial editorial translations and can be refined through the CMS.
 
-### LinkedIn news archive
-
-The CMS includes twelve editorial articles adapted from original Zembro LinkedIn posts, with locally stored images and video. The older batch covers 16 October–11 December 2025. Dates are derived from the publication timestamp encoded in each LinkedIn activity identifier. Original text and source links are retained in `public/assets/news/sources.json` and `older-sources.json`; research captures are in `artwork/news`.
-
-`seed-v17-news` and `seed-v18-news-archive` import each batch once. Existing slugs and CMS edits are preserved. These are curated imports, not an automatic LinkedIn synchronisation. Edit articles, translations and media through `/admin` → News.
-
-See `deploy/README.md` for DigitalOcean instructions. The site is deployed at https://zembro.planetarypixel.be.
+See `deploy/README.md` for DigitalOcean preparation. Nothing has been deployed.
